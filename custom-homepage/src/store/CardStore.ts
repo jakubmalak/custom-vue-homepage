@@ -30,6 +30,14 @@ export const useCardStore = defineStore('cardStore', {
       localStorage.removeItem('cardStore');
       this.$state.cards = [];
     },
+
+    removeCard(title: string, imageUrl: string) {
+      const index = this.$state.cards.findIndex((card) => card.title === title && card.imageUrl === imageUrl);
+      if (index !== -1) {
+        this.$state.cards.splice(index, 1);
+        this.saveStateToLocalStorage();
+      }
+    },
   },
   getters: {
     getCards(): Card[] {
