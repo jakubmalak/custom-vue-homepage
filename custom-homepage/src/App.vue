@@ -29,11 +29,7 @@
 import { ref, computed, onMounted} from 'vue';
 import PageLinkCard from '@/components/PageLinkCard.vue';
 import {useCardStore} from "@/store/CardStore";
-
-interface Card {
-  title: string;
-  imageUrl: string;
-}
+import { Card } from "@/model/Card";
 
 const newCard = ref({ title: '', imageUrl: '' });
 

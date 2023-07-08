@@ -1,9 +1,6 @@
 import { defineStore } from 'pinia';
+import { Card } from "@/model/Card";
 
-interface Card {
-  title: string;
-  imageUrl: string;
-}
 
 export const useCardStore = defineStore('cardStore', {
   state: (): { cards: Card[] } => ({

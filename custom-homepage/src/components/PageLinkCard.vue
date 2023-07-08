@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" sm="6" md="4" lg="3">
+  <v-col cols="12" sm="6" md="4" lg="2">
     <v-card class="pa-4 text-center">
       <v-card-title>
         {{ title }}
