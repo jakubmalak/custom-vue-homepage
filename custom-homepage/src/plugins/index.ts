@@ -9,12 +9,13 @@ import { loadFonts } from './webfontloader'
 import vuetify from './vuetify'
 import pinia from '../store'
 import router from '../router'
-
+import { initializeFirebase} from "@/plugins/firebase";
 // Types
 import type { App } from 'vue'
 
 export function registerPlugins (app: App) {
   loadFonts()
+  initializeFirebase()
   app
     .use(vuetify)
     .use(router)
