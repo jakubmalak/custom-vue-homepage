@@ -39,7 +39,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword
 } from "firebase/auth";
-import { useUserStore } from "@/stores/userStore";
+import { useUserStore } from "../store/UserStore";
 
 name: "Login";
 
